@@ -73,3 +73,46 @@ print('오늘은 {0:02d}-{1:02d}, {2:02d}:{3:02d}분 입니다.'.format(month, d
 # 숫자 자료형
 intcome = 7_000_000_000 #연매출
 print('올해 매출액은 {0:,d}원'.format(intcome))
+PI = 3.1415926536
+print('파이는{0:10.2f}'.format(PI)) # 10.2f 소수점 .까지 다 포함해서 10자리, 소수점뒤는 2자리
+# print('{0:d}'.format(PI)) # 실수형은 d(정수형 포맷팅) 불가 # 예외처리
+
+## f 포맷팅 3.6 (2016)이후에 나온 최신방식
+name = '홍길동'
+age = 30
+
+cont = f'나는 {name}이고, 나이는 {age}세 입니다.'   #f없으면 안됨
+print(cont)
+name = '한지수'
+age = 27
+print(f'나는 {name:>10}이고, 나이는 {age:03d}세 입니다.')   #03d = 세 자리 수를 만들되, 빈자리는 0으로 채움
+print(f'나는 {name:<10}이고, 나이는 {age:03.1f}세 입니다.') 
+#정수는 f포맷 사용가능, 실수는 d포맷 사용불가
+
+## 문자열 함수
+a = 'Life is short, You need Python'
+
+print(a.count('Life'))  # count = 글자나 단어의 개수를 세어줌
+print(a.count('o'))
+
+print(a.find('sh')) # find = 해당 글자가 어디에 위치해 있는지 알려줌
+
+print(a.index('t')) # index = 첫번째 t의 위치를 알려줌
+#print(a.index('k'))    # index는 count를 조회 했을 때 개수가 0이 아닐때만 호출
+print(','.join('abcde')) # 글자 사이마다 ''안의 문자를 삽입
+
+print(a.upper())    # 영어를 대문자로 바꿔줌
+print(a.lower())    # 영어를 소문자로 바꿔줌
+print(a.capitalize())   #문장 첫 글자만 대문자로 바꿔줌
+
+origin = '         Hi          '
+print(f'++{origin}++')
+print(f'++{origin.lstrip()}++')     # 왼쪽 공백 없애기
+print(f'++{origin.rstrip()}++')     # 오른쪽 공백 없애기
+print(f'++{origin.strip}++')      # 양쪽 공백 없애기        #글자 사이의 공백은 불가능, 문장의 맨 앞, 맨 뒤만 가능
+
+print(cp.replace('too', '').replace(' short', 'long'))
+
+## 문자열 자르기 -> 리스트(파이썬에는 배열이 없음)
+cpWords = cp.split(' ')
+print(cpWords)      # 한 문장이 스페이스 기준으로 잘려서 배열이 됨
