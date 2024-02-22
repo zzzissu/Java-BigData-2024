@@ -21,7 +21,7 @@ print('----------------')
 print('Q3번:')
 # --------------------------
 pin = "88881120-1168234"
-yyyymmdd = pin.split('-')[0]    # frist = 'yyyymmdd= '
+yyyymmdd = pin.split('-')[0]    # first = 'yyyymmdd= '
 num = pin.split('-')[1]         # sec = 'num = '
 print(yyyymmdd)                 # print(frist + pin[0:8])
 print(num)                      # print(sec + pin[9:16])
