@@ -38,7 +38,7 @@ print(pow())   # 기본인수
 def plus_many(*args):            # (*args)는 (* n)이름 아무거나 가능 
     result = 0
     for args in args:
-        result += args
+        result += args          # 문자열에는 +, *만 가능 나누기, 빼기 불가능
         
     return result
 
