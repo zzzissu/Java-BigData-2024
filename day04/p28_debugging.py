@@ -36,9 +36,9 @@ while True:
             print('정수만 입력하세요')
             input()
             continue
-        
         calc = newCalc()
         print(f'더하기 결과 : {x} + {y} = {calc.add(x, y)}')
+        
     elif select == 2:
         try:
             x, y = map(int, input('두 수 입력(정수) > ').split())
@@ -46,9 +46,9 @@ while True:
             print('정수만 입력하세요')
             input()
             continue
-        
         calc = newCalc()
         print(f'빼기 결과 : {x} - {y} = {calc.minus(x, y)}')
+        
     elif select == 3:
         try:
             x, y = map(int, input('두 수 입력(정수) > ').split())
@@ -56,9 +56,9 @@ while True:
             print('정수만 입력하세요')
             input()
             continue
-        
         calc = newCalc()
         print(f'곱하기 결과 : {x} × {y} = {calc.mult(x, y)}')
+        
     elif select == 4:
         try:
             x, y = map(int, input('두 수 입력(정수) > ').split())
@@ -70,13 +70,14 @@ while True:
             print('정수만 입력하세요')
             input()
             continue
-        
         calc = newCalc()
         print(f'나누기 결과 : {x} ÷ {y} = {calc.div(x, y)}')
+        
     elif select == 5:
         print('프로그램을 종료합니다')
         input() # 임시로 멈춤
         break
+    
     else: # 1~ 5외의 입력이 들어오면
         continue
         
