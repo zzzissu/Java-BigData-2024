@@ -28,14 +28,14 @@ class Car:
     def getCarColor(self):
         print(f'{self.__carNum}은(는) {self.color}입니다')
     
-    def __init__(self) -> None:       # 생성자 -> None: 리턴할게 없음
+    def __init__(self) -> None:       # 언더바 2개 : 생성자같은 역할 -> None: 리턴할게 없음
         print('Car 객체를 생성합니다.')
         
     def __str__(self) -> str:       # 객체 변수를 print()할 때 출력 커스터마이징 함수
         # init은 생성자이기 때문에 None, str은 스트링이기 때문에 str이라고 나옴
         return f'내 차는 {self.company}, {self.__carNum}입니다.'
     
-    def __init__(self, carNum) -> None:       # 생성자 -> None: 리턴할게 없음
+    def __init__(self, carNum) -> None:
         self.__carNum = carNum
         print('Car 객체를 생성합니다.')
         
