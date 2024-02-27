@@ -15,12 +15,23 @@ class Contact:  # 주소록 클래스
         self.__eMail = eMail
         self.__addr = addr
         
+    # 사용자가 원하는 형태로 출력
     def __str__(self) -> str:   # 원래 출력 <__main__.Contact object at 0x0000024500772150>
         res = (f'이  름: {self.__name}\n'
                f'핸드폰: {self.__phoneNumber}\n'
                f'이메일: {self.__eMail}\n'
                f'주  소: {self.__addr}')
         return res
+    
+    # 연락처 여부확인
+    def isNameExist(self, name):
+        if self.__name == name: # 찾는 이름 존재
+            return True
+        else:
+            return False
+        
+    def getInfo(self):
+        return self.__name, self.__phoneNumber, self.__eMail, self.__addr
     
 def setContact():   # 사용자 입력으로 주소록 받기 함수
     (name, phoneNumber, eMail, addr) = input('입력(이름, 핸드폰, 이메일, 주소[/]) > ').split('/')
@@ -31,6 +42,17 @@ def setContact():   # 사용자 입력으로 주소록 받기 함수
     # print(f'"{name}", "{phoneNumber}", "{eMail}", "{addr}"')
     contact = Contact(name, phoneNumber, eMail, addr)   # 매개변수 명과 동일하게 로컬변수 이름 지정
     return contact
+
+def delContact(list, name): # 연락처 삭제 함수
+    for i, item in enumerate(list):
+        if item.isNameExist(name):
+            del list[i]
+            
+def saveContact(list):  # 연락처 저장함수
+    with open('./contacts.txt', mode='w', encoding='utf-8') as fp:
+        for item in list:
+            name, phoneNumber, eMail, addr = item.getInfo()
+            fp.write(f'{name}/{phoneNumber}/{eMail}/{addr}\n')
     
 def displayManu():
     menu = ('주소록 프로그램 \n'
@@ -39,7 +61,7 @@ def displayManu():
             '3. 연락처 삭제 \n'
             '4. 종료')
     print(menu)
-    sel = int(input('메뉴입력 : '))
+    sel = int(input('메뉴입력: '))
     return sel
 
 def clearConsole():
@@ -50,7 +72,8 @@ def clearConsole():
     os.system(cmd)  # 명령어 실행
     
 def getContacts(list):  # 리스트를 받아서 출력함수
-    for item in list:
+    for i, item in enumerate(list):
+        print(f'{i+1}=====>')
         print(item)
     
 def run():
@@ -65,14 +88,21 @@ def run():
             contact = setContact()
             listContact.append(contact)
             # print(listContact)
-            input() # 엔터를 입력하도록 유도
+            input('입력 성공!') # 엔터를 입력하도록 유도
             clearConsole()
         elif selMenu == 2:  # 연락처 출력
             clearConsole()
             getContacts(listContact)
-            input()
+            input('출력 성공!')
+            clearConsole()
+        elif selMenu == 3:  # 연락처 삭제
+            clearConsole()
+            name = input('삭제할 이름 입력: ')
+            delContact(listContact, name)
+            input('삭제 성공!')
             clearConsole()
         elif selMenu == 4:
+            saveContact(listContact)
             break
         else:
             clearConsole()
