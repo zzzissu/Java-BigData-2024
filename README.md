@@ -116,4 +116,4 @@
 
     - windows App 만들기(PyQt 5)
 
-    ![QtApp]()
+    ![QtApp](https://raw.githubusercontent.com/zzzissu/Java-BigData-2024/main/images/bigdata02.png)
