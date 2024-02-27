@@ -20,10 +20,34 @@ class Contact:  # 주소록 클래스
                f'주  소: {self.__addr}')
         return res
     
+def setContact():   # 사용자 입력으로 주소록 받기 함수
+    (name, phoneNumber, eMail, addr) = input('주소록 입력(이름, 핸드폰, 이메일, 주소[구분자 / ]) > ').split('/')
+    name = name.strip()         # strip = 사용자로 인한 앞, 뒤 스페이스 공백을 제거
+    phoneNumber = phoneNumber.strip()
+    eMail = eMail.strip()
+    addr = addr.strip()
+    print(f'"{name}", "{phoneNumber}", "{eMail}", "{addr}"')
+    
+def displayManu():
+    menu = ('주소록 프로그램 \n'
+            '1. 연락처 추가 \n'
+            '2. 연락처 출력 \n'
+            '3. 연락처 삭제 \n'
+            '4. 종료')
+    print(menu)
+    sel = input('메뉴입력 : ')
+    return sel
+    
 def run():
+    while True:
+        selMenu = displayManu()
+        
+        if selMenu == 4:
+            break
+    # setContact()
     # first = Contact('홍길동', '010-8532-4832', 'fswe@naver.com', '경성')      # 위의 순서와 맞게 입력
-    first = Contact(addr='경성', phoneNumber='010-8532-4832', name='홍길동', eMail='fswe@naver.com')
-    print(first)
+    # first = Contact(addr='경성', phoneNumber='010-8532-4832', name='홍길동', eMail='fswe@naver.com')
+    # print(first)
 
     
 if __name__ == '__main__':  # 메인트리
