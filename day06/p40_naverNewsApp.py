@@ -13,7 +13,7 @@ from PyQt5.QtWidgets import *
 import webbrowser   # 기본 웹브라우저 모듈
 from naverSearch import NaverSearch
 import datetime
-# import time
+import time
 
 class qtApp(QWidget):
     def __init__(self) -> None: 
