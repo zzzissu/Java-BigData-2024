@@ -30,7 +30,7 @@ class NaverSearch:
     
     def getSearchResult(self, searchWord):
         baseUrl = 'https://openapi.naver.com/v1/search/news.json'
-        params = f'?query={quote(searchWord)}&start=1&display=100'
+        params = f'?query={quote(searchWord)}&start=1&display=20'
         finalUrl = baseUrl + params
         
         result = self.getRequestUrl(finalUrl)

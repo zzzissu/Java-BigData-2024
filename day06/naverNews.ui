@@ -93,7 +93,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QListView" name="lsvSearchResult"/>
+     <widget class="QTableWidget" name="tblSearchResult"/>
     </item>
    </layout>
   </widget>
