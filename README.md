@@ -140,3 +140,5 @@
   - json 학습
   - PyQt5
     - 스레드 개념, 학습
+    - TTS
+    - QrCode 생성기
