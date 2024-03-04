@@ -158,9 +158,22 @@
 
 - 파이썬 응용
 
-  - 파이썬 자동화
+  - pyAutoGUI 모듈(마우스, 키보드, 화면캡쳐)
+  - 슬랙 webhook로 모바일 메세지 전송
 
-    - pyAutoGUI 모듈(마우스, 키보드, 화면캡쳐)
-    - 슬랙 webhook로 모바일 메세지 전송
+    <!-- ![슬랙](https://raw.githubusercontent.com/zzzissu/Java-BigData-2024/main/images/bigdata08.jpg) -->
+    <!-- html 태그로 이미지를 삽입하면 문제 없음 -->
 
-    ![슬랙](https://raw.githubusercontent.com/zzzissu/Java-BigData-2024/main/images/bigdata08.jpg)
+  <img src="https://raw.githubusercontent.com/zzzissu/Java-BigData-2024/main/images/bigdata08.jpg" width="250>
+
+  - Tesseract 프로그램으로 이미지에서 글자 추출(인식률을 높이려면 직접 훈련시켜서 데이터를 만들어야 함)
+    ! [OCR](https://raw.githubusercontent.com/zzzissu/Java-BigData-2024/main/images/bigdata09.png)
+
+## 9일차
+
+- 파이썬 응용
+  - 이미지 처리 OpenCV
+  - 플라스크 웹서버
+  - 그림에디터 만들기
+  - 메모장 만들기
+  - jupyter Notebook 사용법(빅데이터 분석, 코딩테스트)
