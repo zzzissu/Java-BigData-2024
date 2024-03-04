@@ -7,13 +7,13 @@ from email import policy
 import requests
 import json
 
-slack_url = 'https://hooks.slack.com/services/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'
+slack_url = 'https://hooks.slack.com/services/T**/B**/0**'
 def sendToSlack(msg):
     header = {'content-type': 'application/json'}
     data = {'text': msg}
     res = requests.post(slack_url, headers=header, data=json.dumps(data))
     if res.status_code == 200: return 'OK'
-    else: 
+    else: return 'ERROR'
 
 def find_encoding_info(txt):
     info = email.header.decode_header(txt)
@@ -21,8 +21,8 @@ def find_encoding_info(txt):
     return subject, encode
 
 imap = imaplib.IMAP4_SSL('imap.naver.com')
-id = ''
-pwd = ''
+id = '<your id>'
+pwd = '<your password>'
 res = imap.login(id, pwd)
 
 if res[0] == 'OK':
@@ -49,6 +49,8 @@ if res[0] == 'OK':
                 print(f'{subject} 메일 슬랙전송 성공')
             else:
                 print(f'{subject} 메일 슬랙전송 실패')
+        else:
+            print('보낼메세지 없음')
 
 
         # print('=' * 80)
