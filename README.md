@@ -158,6 +158,8 @@
 
 - 파이썬 응용
 
+  - TTS
+
   - pyAutoGUI 모듈(마우스, 키보드, 화면캡쳐)
   - 슬랙 webhook로 모바일 메세지 전송
 
@@ -172,8 +174,19 @@
 ## 9일차
 
 - 파이썬 응용
+
   - 이미지 처리 OpenCV
-  - 플라스크 웹서버
-  - 그림에디터 만들기
+    ![얼굴인식](https://raw.githubusercontent.com/zzzissu/Java-BigData-2024/main/images/bigdata10.gif)
+
+  - [Flask] (https://flask-docs-kr.readthedocs.io/ko/latest/index.html), [Django] (https://developer.mozilla.org/ko/docs/Learn/Server-side/Django) 웹서버
+
+  - 그림에디터 만들기(with PyQt5)
+
+  ![editor](https://raw.githubusercontent.com/zzzissu/Java-BigData-2024/main/images/bigdata11.gif)
+
+## 10일차
+
+- 파이썬 응용
+  - 그림에디터 완성
   - 메모장 만들기
   - jupyter Notebook 사용법(빅데이터 분석, 코딩테스트)
