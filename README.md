@@ -189,6 +189,12 @@
 - 파이썬 응용
 
   - 그림에디터 완성(openCV 그레이스케일, 블러기능 추가)
+ 
+    
+
+https://github.com/zzzissu/Java-BigData-2024/assets/157682767/7ba4e8a1-9d9c-43ee-bc45-d00fabdac7fd
+
+
 
     - mp4로 동영상 업로드 하려면 github 사이트에서 Readme.md를 수정 클릭 후, mp4를 드래그
     - 제한 사항은 10MB 이하
