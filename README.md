@@ -208,5 +208,9 @@
 
   - Ctrl + Shift + P (명령 팔레트)
   - 노트북 사용
+  - chatGPT API 사용
+    - https://github.com/teddylee777/openai-api-kr
 
-- 메모장 만들기
+- 메모장 만들기(참조링크)
+  - https://www.youtube.com/watch?v=6jPXGgON6oU&list=PLnIaYcDMsScwsKo1rQ18cLHvBdjou-kb5&index=5
+  - https://pagichacha.tistory.com/44 참조해서 만들어 볼 것
