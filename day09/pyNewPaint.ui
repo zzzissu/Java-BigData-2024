@@ -76,7 +76,15 @@
      <addaction name="action_PenGreen"/>
      <addaction name="action_PenBlue"/>
     </widget>
+    <widget class="QMenu" name="menu_T_2">
+     <property name="title">
+      <string>변환(&amp;T)</string>
+     </property>
+     <addaction name="action_Grayscale"/>
+     <addaction name="action_B"/>
+    </widget>
     <addaction name="menu_P"/>
+    <addaction name="menu_T_2"/>
    </widget>
    <widget class="QMenu" name="menu_H">
     <property name="title">
@@ -179,6 +187,16 @@
    </property>
    <property name="text">
     <string>이 프로그램은...(&amp;A)</string>
+   </property>
+  </action>
+  <action name="action_Grayscale">
+   <property name="text">
+    <string>그레이스케일(&amp;G)</string>
+   </property>
+  </action>
+  <action name="action_B">
+   <property name="text">
+    <string>블러(B)</string>
    </property>
   </action>
  </widget>

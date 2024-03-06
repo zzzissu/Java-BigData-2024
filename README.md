@@ -187,6 +187,17 @@
 ## 10일차
 
 - 파이썬 응용
-  - 그림에디터 완성
+
+  - 그림에디터 완성(openCV 그레이스케일, 블러기능 추가)
+  - 실행파일 만들기
+
+    - PyInstaller 모듈 설치
+      ```shell
+      > pip install pyinstaller
+      > pyinstaller -w -F pythonfile.py
+      ```
+    - -w는 윈도우창만 실행 콘솔창 삭제, -F \_internal 폴더 생성 안되도록, 진짜 oneFile로 만들기
+    - 실패, 재생성시는 build, dist폴더 삭제, pythonfile, spec 삭제 뒤 다시 명령어 실행
+
   - 메모장 만들기
   - jupyter Notebook 사용법(빅데이터 분석, 코딩테스트)
