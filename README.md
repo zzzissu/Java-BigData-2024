@@ -201,8 +201,12 @@
     > pip install pyinstaller
     > pyinstaller -w -F pythonfile.py
     ```
-  - -w는 윈도우창만 실행 콘솔창 삭제, -F_internal 폴더 생성 안되도록, 진짜 oneFile로 만들기
-  - 실패, 재생성시는 build, dist폴더 삭제, pythonfile, spec 삭제 뒤 다시 명령어 실행
+    - -w는 윈도우창만 실행 콘솔창 삭제, -F_internal 폴더 생성 안되도록, 진짜 oneFile로 만들기
+    - 실패, 재생성시는 build, dist폴더 삭제, pythonfile, spec 삭제 뒤 다시 명령어 실행
+
+- jupyter Notebook 사용법(빅데이터 분석, 코딩테스트)
+
+  - Ctrl + Shift + P (명령 팔레트)
+  - 노트북 사용
 
 - 메모장 만들기
-- jupyter Notebook 사용법(빅데이터 분석, 코딩테스트)
